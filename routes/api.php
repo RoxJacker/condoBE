@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/multas', [MultaController::class, 'index']);
+Route::post('/multas', [MultaController::class, 'store']);

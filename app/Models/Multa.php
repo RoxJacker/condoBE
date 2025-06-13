@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Multa extends Model
 {
+  public $timestamps = false; // <-- Agrega esta línea
+
   protected $fillable = ['descripcion', 'fecha', 'usuario_id', 'departamento_id'];
 
   public function usuario(): BelongsTo
